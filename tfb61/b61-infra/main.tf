@@ -82,7 +82,7 @@ data "aws_ami" "data_webserver_ami" {
     values = ["hvm"]
   }
 
-  owners = [ "813592692089"] # Amazon
+   # Amazon
 
 }
 
