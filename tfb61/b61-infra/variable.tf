@@ -1,11 +1,11 @@
 variable "webserver_ami" {
-   default = "ami-0fa3fe0fa7920f68e"
+   default = "ami-0fa3fe0fa7920f68e "
 }
 variable "webserver_instance_type" {
    default = "t3.micro"
 }
 variable "webserver_key_name" {
-   default = "30july"
+   default = "keys"
 }
 variable "webserver_vpc_security_group_ids" {
    default = "sg-0bbfe8e7d4bf3c179"
