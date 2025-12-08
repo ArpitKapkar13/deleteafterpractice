@@ -64,12 +64,13 @@ output "webserver_sg_arn" {
 }
 
 data "aws_security_group" "data_webserver_sg" {
-  name = "launch-wizard-4"
+  name = "default"
 
 }
 
 data "aws_ami" "data_webserver_ami" {
   most_recent = true
+  owners      = ["amazon"]
 
   filter {
     name   = "name"
