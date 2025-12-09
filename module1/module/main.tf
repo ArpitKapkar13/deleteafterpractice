@@ -18,5 +18,5 @@ module "vpc" {
 module "internetgateway" {
   source =  "/home/rpit_k/deleteafterpractice/module1/main/internetgateway"
   vpc_id=module.vpc.vpc_id
-  public_subnet_id = module.vpc.subnet_id
+  public_subnet_id = module.vpc.subnet_id[0]
 }
