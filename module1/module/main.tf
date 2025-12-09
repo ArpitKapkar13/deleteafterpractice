@@ -4,7 +4,7 @@ module "ec2" {
   web_instance_type = "t3.micro"
   web_keys = "keys"
   wev_disable_api_termination = false
-  web_subnetA = module.vpc_subnet_id
+  web_subnetA = module.vpc.subnet_id
   web_security_group=module.vpc.webserver_sg
 }
 
