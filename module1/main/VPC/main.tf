@@ -2,7 +2,7 @@ resource "aws_vpc" "cbz_vpc" {
   cidr_block = var.vpc_cidr
 }
 
-resource "aws_subnet" "subnetA" {
+resource "aws_subnet" "cbz_subnetA" {
   vpc_id     = aws_vpc.cbz_vpc.id
   cidr_block = var.vpc_subnetA
   map_public_ip_on_launch = true
