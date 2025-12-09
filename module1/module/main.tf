@@ -1,6 +1,6 @@
 module "ec2" {
   source = "/home/rpit_k/deleteafterpractice/module1/main/Ec2"
-  web_ami= "ami-08d7aabbb50c2c24e "
+  web_ami= "ami-068c0051b15cdb816"
   web_instance_type = "t3.micro"
   web_keys = "keys"
   wev_disable_api_termination = false
