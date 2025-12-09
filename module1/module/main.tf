@@ -14,3 +14,9 @@ module "vpc" {
   vpc_subnetA = "172.30.128.0/20"
   public_ip = true
 }
+
+module "internetgateway" {
+  source =  "/home/rpit_k/deleteafterpractice/module1/main/internetgateway"
+  vpc_id=module.vpc.vpc_id
+  public_subnet_id = module.VPC.subnet_id
+}
